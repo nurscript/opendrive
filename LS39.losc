@@ -1,0 +1,19 @@
+<LogicalOpenSCENARIO>
+	<FileHeader description="" author="" revMajor="0" date="" revMinor="0"/>
+	<Properties>
+		<Export>
+			<Directory path=""/>
+		</Export>
+		<Random>
+			<Seed value="0"/>
+		</Random>
+	</Properties>
+	<ParameterDeclaration>
+		<Parameter name="InitialVehiclePositionSObj01" datatype="double" query="//OpenSCENARIO/Storyboard/Init/Actions/Private[2]/Action[1]/Position/RoadPosition[@s]">
+			<Generator type="uniform_range" samples="21" max="80.0" min="0" step="4"/>
+		</Parameter>
+		<Parameter name="InitialVehicleSpeedObj01" datatype="double" query="//OpenSCENARIO/Storyboard/Init/Actions/Private[2]/Action[2]/Longitudinal/Speed/Target/Absolute[@value]">
+			<Generator type="uniform_range" samples="5" max="11.11" min="5.56" step="1.38"/>
+		</Parameter>
+	</ParameterDeclaration>
+</LogicalOpenSCENARIO>
